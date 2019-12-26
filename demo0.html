@@ -3,89 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>:)</title>
-	<style src="work.css"></style>
-	<style type="text/css">
-		*{
-    	margin: 0;
-    	padding: 0;
-		}
-		.top{
-            /* 设置宽度高度背景颜色 */
-            height:auto; /*高度改为自动高度*/
-            width:100%;
-            margin-left:0;
-            /*margin-right: ;*/
-            background:rgb(189, 181, 181);
-            position: fixed; /*固定在顶部*/
-            top: 420px;/*离顶部的距离为0*/
-            margin-bottom: 5px;
-        }
-        .top ul{
-            /* 清除ul标签的默认样式 */
-            height: 61px;
-
-            width:750px;/*宽度也改为自动*/
-            list-style-type: none;
-            white-space:nowrap;
-            overflow: hidden;
-            margin-left: 5%;
-            /* margin-top: 0;          */
-            padding: 0;
-
-        }
-        .top li {
-        	margin-top: 18px;
-            float:left; /* 使li内容横向浮动，即横向排列  */
-            
-            
-            margin-right:12%;  /* 两个li之间的距离*/
-            position: relative;
-            overflow: hidden;
-        }
-
-        .top li a{
-           /* 设置链接内容显示的格式*/
-            display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
-            color:white;
-            text-align: center;
-            padding: 3px;
-            overflow: hidden;
-            text-decoration: none; /* 去除下划线 */
-            
-        }
-        .top li a:hover{
-            /* 鼠标选中时背景变为黑色 */
-            background-color: #111;
-        }
-
-        /*
-        .top ul li ul{
-            /* 设置二级菜单 
-            margin-left: -0.2px;
-            background:rgb(189, 181, 181);
-            position: relative;
-            display: none; /* 默认隐藏二级菜单的内容 
-
-        }
-        .top ul li ul li{
-            /* 二级菜单li内容的显示 
-            
-            float:none;
-            text-align: center;
-        }
-
-        .top ul li:hover ul{
-            /*鼠标选中二级菜单内容时 
-            display: block;
-        }*/
-        body{
-            background:#eff3f5;
-        }
-	</style>
+	<style src="work2.css"></style>
+    <link rel="stylesheet" type="text/css" href="./css/work2.css">
+    <script type="text/javascript" src="./js/animate.js"></script>
 </head>
 <body>
 	<div>
-		<img src="images/top06.jpg" id="topImg">
+		<img src="images/top/top06.jpg" id="topImg">
 	</div>
 	<div class="top">
         <center> 
@@ -104,7 +28,36 @@
                 </ul>
             </li> -->        
         </ul>
-        </center>      
+        </center>
     </div>
+
+    <div class="box" id="box">
+        <div class="slider" id="slider">
+            <div class="slide"><img src="./images/mid/b5.jpg" alt=""></div>
+            <div class="slide"><img src="./images/mid/b1.jpg" alt=""></div>
+            <div class="slide"><img src="./images/mid/b2.jpg" alt=""></div>
+            <div class="slide"><img src="./images/mid/b3.jpg" alt=""></div>
+            <div class="slide"><img src="./images/mid/b4.jpg" alt=""></div>
+            <div class="slide"><img src="./images/mid/b5.jpg" alt=""></div>
+            <div class="slide"><img src="./images/mid/b1.jpg" alt=""></div>
+        </div>
+        <span id="left"><</span>
+        <span id="right">></span>
+        <ul id="nav" class="nav">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+
+    <center>
+    <p >
+        <b><i><font color=#ff9900 size="3">美术史是在观察一种形式的传承，而在形式的传承中，
+        <br>
+        “美”的讯息也变成一脉香火，代代不断，可以超越政治的兴亡，可以超越社会的变迁。</font></i></b>
+    </center>
 </body>
+<script type="text/javascript" src="./js/work2.js"></script>
 </html>
